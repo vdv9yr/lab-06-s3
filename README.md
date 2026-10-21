@@ -1,3 +1,14 @@
+## My S3 buckets
+Public: 
+https://public-vdv9yr.s3.amazonaws.com/index.html
+
+Private: 
+https://secret-vdv9yr.s3.us-east-1.amazonaws.com/pg2148.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAXZY4WKSIVHK3QTNZ%2F20261021%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261021T154317Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIEwAiQ48%2F%2BbwaRM%2F8efOSHnc%2FNRRHFAbqbObGZb8IIhvAiEAhtMBSVrcpnKqbqDYr%2FVbEsUW7otJCKyBFcUTBYTfkfUqrQIIYBAAGgw1MzYzOTQyMjQ3ODUiDPN68l%2BNgCt1OAlLbCqKAmiHL9nbPU8Y%2FYTYB4Qwwtxd3IFgaJmEipchxA03zlaACkD3WoXK5XEOl38jycpTjAmCYK6IUOMnOd8gaeAJ3aAzIMLHsixNSQQPAec6jsaew54C1hGV2sK%2BjpvZKVt9A9FqzQSUJv2O5bLOiYGUSomRLaY0Cx02mhCE8hHHdJnosqFQYoELokeJCGa7jdzo7yz2Z9b9RVSAlJOUFUYlcA1RRDVS3GEwaoAtmodJlBuA0kFgEmnvvY0K7bY2deoJAwI%2F0Wgc7JpmmUw7sf2cLQDfJBgqwqUR%2Bf6Ws3yHDUil0Cp6yfFvDAWyzUGx3WApaoY43BOjsGWVydsjvDepuJfUyb8SYgKZGUo4MM%2Bi49YGOp0BUJP7F0day3gHX6kArIo9cIIxl0dZrd7QBAzEqjVNQ%2Fu7s1MA%2FMBvrZBf9mELyOQ7%2F4%2FyT7SVPTzJE6WQFlrT4NZVuFh27XUWN9LwOScksWmSZ9cnZbkZoHrBFwpGUZ%2Fldln%2F1knhps1lWpxTWa3z94nfb0AKYjsD3m4gGRPbETxsKgfrqoANMS1MGlyHZQZbHnhrYqihwAyflF0TLA%3D%3D&X-Amz-Signature=1a6379140df572dade3834058caa00230a5215ca589e93e15ab5a20525e41492
+
+Why: 
+- You would choose a public bucket when you want content for everyone and links that are permanent/predictable and you don't need to control access to the content in the bucket.
+- You would choose a presigned URL when the content is private, but a few people need access, or access is temporary and you want it to stay private. You control who gets access, which allows for more control. 
+
 # Lab 06: Working with S3 Storage
 
 The goal of this lab is to get you comfortable with **Amazon S3** object storage, building on what you have learned about the command line, AWS accounts, and scripting. You will stage a collection of 100 books from [Project Gutenberg](https://www.gutenberg.org/) in a **public** bucket that anyone can browse in a web browser, and share a single book from a **private** bucket with a time-limited presigned URL.
